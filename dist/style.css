@@ -52,7 +52,7 @@ header .sub-heading {
 section.block {
   text-align: center;
   margin: 15px auto;
-  padding: 100px;
+  padding: 50px;
 }
 section.block p {
   font-size: 0.85em;
@@ -76,6 +76,7 @@ section.block p {
 }
 
 .move-section {
+  color: #fefefe;
   display: flex;
   justify-content: flex-end;
   background-image: url("/public/imgs/avada-movers-movewithease-background-new.jpg");
@@ -89,7 +90,20 @@ section.block p {
   max-width: 450px;
   background-color: #8fce53;
   border: 10px solid #6bbb14;
-  padding: 25px;
+  padding: 50px 25px;
+}
+.move-section .card .sub-heading {
+  color: #fefefe;
+  font-weight: 600;
+  font-size: 13px;
+}
+.move-section .card h2 {
+  color: #fefefe;
+}
+.move-section .card p {
+  color: #fefefe;
+  margin: 25px 0;
+  font-size: 13px;
 }
 
 * {
@@ -120,6 +134,7 @@ a {
   font-weight: 600;
   color: #262727;
   text-decoration: none;
+  font-size: 13px;
 }
 a:visited {
   color: #292b2f;
@@ -144,7 +159,7 @@ p {
 }
 
 section {
-  padding: 50px;
+  padding: 60px;
 }
 section h3 {
   color: #1975c0;
@@ -162,17 +177,23 @@ section h3 {
 .btn {
   color: white;
   display: inline-block;
-  padding: 7px 17px;
+  padding: 10px 19px;
   text-transform: capitalize;
   background-color: #1b74c3;
   color: #fefefe;
   border-radius: 20px;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 500;
   letter-spacing: 1.5px;
 }
 .btn:visited {
   color: white;
+}
+
+.horizontal-line {
+  border-bottom: 0.5px solid white;
+  width: 75%;
+  margin: auto;
 }
 
 .flex {

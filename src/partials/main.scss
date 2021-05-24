@@ -46,6 +46,7 @@ section.block{
     
 }
 .move-section{
+    color: $secondTextColor;
     display: flex;
     justify-content: flex-end;
     background-image: url('/public/imgs/avada-movers-movewithease-background-new.jpg');
@@ -54,11 +55,23 @@ section.block{
     background-position-x:center ;
     background-repeat: no-repeat;
     .card{
-        
         width: 40%;
         max-width: 450px;
         background-color: $fifthMaterial;
         border: 10px solid $thirdMaterial;
-        padding: $spacing4;
+        padding: $spacing5 $spacing4;
+        .sub-heading{
+            color: $secondTextColor;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        h2{
+            color: $secondTextColor;
+        }
+        p{
+            color: $secondTextColor;
+            margin: $spacing4 0 ;
+            font-size: 13px;
+        }
     }
 }
