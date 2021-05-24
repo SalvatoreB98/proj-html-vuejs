@@ -37,7 +37,7 @@
             <nav class="wrap flex">
                 <img src="public/imgs/avada-movers-logo.png" alt="">
                 <div>
-                    <a v-for="element in navLinks" :href="element.link" class="padding-3"> {{element.title}}</a>
+                    <a v-for="element in navLinks" :href="element.link" class="padding-3"> {{element.name}}</a>
                     <a class="btn">
                         FREE QUOTE
                     </a>
@@ -193,16 +193,27 @@
         </main>
         <!-- FOOTER -->
         <footer class="flex">
-            <div>
+            <div class="padding-4">
                 <h4>ABOUT </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quibusdam eligendi reprehenderit
+                <p class="margin-top-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quibusdam eligendi reprehenderit
                     ipsum amet voluptatibus! Accusantium reprehenderit voluptas porro ex laboriosam fugiat totam
                     deleniti perferendis eius, vero eum, tempora suscipit.</p>
-                <div>
+                <div class="margin-top-5">
                     <img src="public/imgs/avada-movers-logo.png" alt="">
                 </div>
             </div>
-
+            <div class="padding-4">
+                <h4>AVADA MOVERS</h4>
+                <ul>
+                    <li class="margin-top-5" v-for="element in navLinks"><a href="element.link"> > {{element.name}}</a></li>
+                </ul>
+            </div>
+            <div class="padding-4">
+                <h4>RECENT POSTS</h4>
+                <ul>
+                    <li class="margin-top-5" v-for="element in recentPosts"><a href="element.link"> > {{element.name}}</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>

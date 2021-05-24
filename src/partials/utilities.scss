@@ -30,4 +30,9 @@
         margin: #{$i}em;
     };
 }
+@for $i from 1 through 7 {
+    .margin-top-#{$i} {
+        margin-top: #{$i*5}px;
+    };
+}
 

@@ -1,6 +1,6 @@
 header{
     .banner{
-        font-size: 13px;
+        font-size: $littleFontSize;
         @include wrap();
         justify-content: space-between;
         padding: $spacing1 0;

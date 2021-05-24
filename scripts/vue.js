@@ -5,27 +5,27 @@ window.addEventListener("load",()=>
         data: {
             navLinks: [
                 {
-                    title:"Home",
+                   name:"Home",
                     link:"#home"
                 },
                 {
-                    title:"Rates",
+                   name:"Rates",
                     link:"#"
                 },
                 {
-                    title:"Testimonials",
+                   name:"Testimonials",
                     link:"#"
                 },
                 {
-                    title:"FAQ  ",
+                   name:"FAQ  ",
                     link:"#"
                 },
                 {
-                    title:"Blog",
+                   name:"Blog",
                     link:"#"
                 },
                 {
-                    title:"Contact",
+                   name:"Contact",
                     link:"#"
                 },
             ],
@@ -52,6 +52,28 @@ window.addEventListener("load",()=>
                     link:"#"
                 }
             ],
+            recentPosts:[
+                {
+                    name: "Heading Out To College?",
+                    link:"#"
+                },
+                {
+                    name: "Moving Your Bussiness?",
+                    link:"#"
+                },
+                {
+                    name: "Outstanding Quality?",
+                    link:"#"
+                },
+                {
+                    name: "Cast of Moving?",
+                    link:"#"
+                },
+                {
+                    name: "Best Moving Tips?",
+                    link:"#"
+                },
+            ]
         },
         methods: {
     

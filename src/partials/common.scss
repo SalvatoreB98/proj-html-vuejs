@@ -17,20 +17,26 @@ h2{
     color: $primaryColor;
     margin: $spacing2 0;
 }
+h4{
+    font-weight: 900;
+}
 a{
     display: inline-block;
     font-weight: 600;
     color: $firstTextColor;
     text-decoration: none;
-    font-size: 13px;
+    font-size: $littleFontSize;
     &:visited{
         color: $fourthMaterial;
 
     }
 }
 p{
+    font-size: $littleFontSize;
     line-height: 1.8em;
-    color:$darkGray
+    color:$darkGray;
+    font-weight: 500;
+
 }
 .wrap{
     width:90%;
@@ -81,4 +87,7 @@ section{
     border-bottom: 0.5px solid white;
     width: 75%;
     margin: auto;
+}
+ul{
+    list-style-type: none;
 }

@@ -25,7 +25,7 @@ section.block{
     padding: $spacing5;
     p{
         font-size: 0.85em;
-        font-weight: 500;
+
         margin: $spacing3 auto;
         max-width: 500px;
     }
@@ -63,7 +63,7 @@ section.block{
         .sub-heading{
             color: $secondTextColor;
             font-weight: 600;
-            font-size: 13px;
+            font-size: $littleFontSize;
         }
         h2{
             color: $secondTextColor;
@@ -71,7 +71,7 @@ section.block{
         p{
             color: $secondTextColor;
             margin: $spacing4 0 ;
-            font-size: 13px;
+            font-size: $littleFontSize;
         }
     }
 }
@@ -89,17 +89,18 @@ section.block{
     blockquote{
         line-height: 1.6em;
         color: $darkGray;
-        font-size: 13px;
-        font-weight: 500;
+        font-size: $littleFontSize;
+
         font-style: italic;
     }
 }
 .request-section{
     background-image: url('/public/imgs/avada-movers-request-quote-background.jpg');
+    border-bottom: 10px solid $primaryColor;
     p{
         max-width: 600px;
         margin: auto;
-        font-size: 13px;
-        font-weight: 500;
+        font-size: $littleFontSize;
+
     }
 }
