@@ -40,7 +40,7 @@ section.block{
         }
     }
     .card{
-        max-width: 250px;
+        max-width: 330px;
         flex: 1;
     }
     
@@ -60,6 +60,7 @@ section.block{
         background-color: $fifthMaterial;
         border: 10px solid $thirdMaterial;
         padding: $spacing5 $spacing4;
+        margin-right: 15%;
         .sub-heading{
             color: $secondTextColor;
             font-weight: 600;
