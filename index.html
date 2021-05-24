@@ -18,7 +18,7 @@
 
 <body>
     <!-- CONTAINER DEL SITO CON ELEMENTO VUE -->
-    <div id="root">
+    <div id="root" id="home">
         <header>
             <div class="third-material-bg">
                 <!-- BANNER INIZIO PAGINA CON  NUMERO -->
@@ -36,8 +36,8 @@
             <!-- NAVBAR -->
             <nav class="wrap flex">
                 <img src="public/imgs/avada-movers-logo.png" alt="">
-                <div>
-                    <a v-for="element in navLinks" :href="element.link" class="padding-3"> {{element.name}}</a>
+                <div class="hidden-sm">
+                    <a v-for="(element,index) in navLinks" :href="element.link" class="padding-3" @click="setActiveLink(index)" :class="{'active' : activeLink == index}"> {{element.name}}</a>
                     <a class="btn">
                         FREE QUOTE
                     </a>
@@ -47,7 +47,7 @@
         <!-- INIZIO DEL MAIN -->
         <main>
             <!-- HERO -->
-            <section class="hero flex" id="home">
+            <section class="hero flex">
                 <div>
                     <div class="sub-heading">MOVING WITHOUT THE HASSLE</div>
                     <h1>WE MAKE IT SIMPLE</h1>

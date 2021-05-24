@@ -27,6 +27,9 @@ header{
                 color: $primaryColor;
             }
         }
+        .active{
+            color: $primaryColor; 
+        }
     }
     .sub-heading{
         color:$darkGray;

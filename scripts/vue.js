@@ -73,16 +73,19 @@ window.addEventListener("load",()=>
                     name: "Best Moving Tips?",
                     link:"#"
                 },
-            ]
+            ],
+            activeLink: 0
         },
         methods: {
-    
+            setActiveLink(index){
+                this.activeLink = index;
+            }
         },
         computed:{
     
         },
         mounted(){
-    
+            
         },
     })
 })
