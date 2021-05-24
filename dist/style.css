@@ -326,3 +326,11 @@ ul {
 footer > div {
   flex: 1;
 }
+
+.footer-banner {
+  font-size: 13px;
+  color: #fefefe;
+}
+.footer-banner a {
+  color: #fefefe;
+}

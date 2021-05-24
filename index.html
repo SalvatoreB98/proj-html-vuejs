@@ -195,7 +195,8 @@
         <footer class="flex">
             <div class="padding-4">
                 <h4>ABOUT </h4>
-                <p class="margin-top-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quibusdam eligendi reprehenderit
+                <p class="margin-top-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quibusdam
+                    eligendi reprehenderit
                     ipsum amet voluptatibus! Accusantium reprehenderit voluptas porro ex laboriosam fugiat totam
                     deleniti perferendis eius, vero eum, tempora suscipit.</p>
                 <div class="margin-top-5">
@@ -205,16 +206,29 @@
             <div class="padding-4">
                 <h4>AVADA MOVERS</h4>
                 <ul>
-                    <li class="margin-top-5" v-for="element in navLinks"><a href="element.link"> > {{element.name}}</a></li>
+                    <li class="margin-top-5" v-for="element in navLinks"><a href="element.link"> > {{element.name}}</a>
+                    </li>
                 </ul>
             </div>
             <div class="padding-4">
                 <h4>RECENT POSTS</h4>
                 <ul>
-                    <li class="margin-top-5" v-for="element in recentPosts"><a href="element.link"> > {{element.name}}</a></li>
+                    <li class="margin-top-5" v-for="element in recentPosts"><a href="element.link"> >
+                            {{element.name}}</a></li>
                 </ul>
             </div>
         </footer>
+        <div class="third-material-bg">
+            <div class="footer-banner text-center padding-4">
+                <div>
+                    ®Copyright 2012-2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress
+                </div>
+                <div>
+                    <a class="padding-2" v-for="element in socialList" :href="element.link"><i :class="element.class"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
