@@ -1,0 +1,7 @@
+header{
+    .banner{
+        @include wrap();
+        justify-content: space-between;
+    }
+}
+

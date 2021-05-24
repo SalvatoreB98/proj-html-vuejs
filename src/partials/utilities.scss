@@ -1,0 +1,18 @@
+// UTILITIES
+.flex{
+    display: flex;
+}
+.third-material-bg{
+    background-color: $thirdMaterial;
+}
+//MARGINS AND PADDINGS
+@for $i from 1 through 3 {
+    .padding-#{$i} {
+        padding: #{$i*5}px;
+    };
+}
+@for $i from 4 through 6 {
+    .padding-#{$i} {
+        padding: #{$i}em;
+    };
+}
