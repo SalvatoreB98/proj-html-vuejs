@@ -70,7 +70,7 @@ section.block p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.full-service .img-container .card {
+.full-service .card {
   max-width: 250px;
   flex: 1;
 }
