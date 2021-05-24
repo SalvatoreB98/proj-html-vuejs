@@ -2,8 +2,17 @@ header{
     .banner{
         @include wrap();
         justify-content: space-between;
+        padding: $spacing1 0;
+        a{
+            color:white;
+            padding: 0 $spacing1;
+            &:visited{
+                color: white;
+            } 
+        }
     }
     nav{
+        padding: $spacing3 0;
         height: 90px;
         img{
             height: 100%;

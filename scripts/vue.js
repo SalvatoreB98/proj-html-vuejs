@@ -6,29 +6,52 @@ window.addEventListener("load",()=>
             navLinks: [
                 {
                     title:"Home",
-                    link:"hero"
+                    link:"#home"
                 },
                 {
                     title:"Rates",
-                    link:"hero"
+                    link:"#"
                 },
                 {
                     title:"Testimonials",
-                    link:"hero"
+                    link:"#"
                 },
                 {
                     title:"FAQ  ",
-                    link:"hero"
+                    link:"#"
                 },
                 {
                     title:"Blog",
-                    link:"hero"
+                    link:"#"
                 },
                 {
                     title:"Contact",
-                    link:"hero"
+                    link:"#"
                 },
-            ]
+            ],
+            socialList:[
+                {
+                    name:'facebook',
+                    class:"fa fa-facebook" ,
+                    link:"#"
+                    
+                },
+                {
+                    name:'twitter',
+                    class:"fa fa-twitter" ,
+                    link:"#"
+                },
+                {
+                    name:'instagram',
+                    class:"fa fa-instagram" ,
+                    link:"#"
+                },
+                {
+                    name:'youtube',
+                    class:"fa fa-youtube-play" ,
+                    link:"#"
+                }
+            ],
         },
         methods: {
     

@@ -1,0 +1,21 @@
+.hero{
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/public/imgs/avada-movers-homeherobackground-final.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .banner{
+        background-color: $secondaryColor;
+        padding: $spacing4;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right:0;
+        display: flex;
+        justify-content: center;
+    }
+}

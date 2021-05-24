@@ -8,6 +8,9 @@
 .wrap{
     @include wrap();
 }
+.text-center{
+    text-align: center;
+}
 //MARGINS AND PADDINGS
 @for $i from 1 through 3 {
     .padding-#{$i} {
