@@ -57,6 +57,10 @@ section{
     font-weight: 800;
     text-transform: capitalize;
 }
+.card{
+    max-width: 330px;
+    flex: 1;
+}
 .btn{
     color: white;
     &:visited{

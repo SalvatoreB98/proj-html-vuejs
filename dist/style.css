@@ -71,8 +71,7 @@ section.block p {
      object-fit: cover;
 }
 .full-service .card {
-  max-width: 330px;
-  flex: 1;
+  border: 10px solid #e7e7e7;
 }
 
 .move-section {
@@ -90,7 +89,7 @@ section.block p {
   max-width: 450px;
   background-color: #8fce53;
   border: 10px solid #6bbb14;
-  padding: 50px 25px;
+  padding: 50px 20px;
   margin-right: 15%;
 }
 .move-section .card .sub-heading {
@@ -105,6 +104,34 @@ section.block p {
   color: #fefefe;
   margin: 25px 0;
   font-size: 13px;
+}
+
+.testimonials-section {
+  background-image: url(/public/imgs/avada-movers-testimonial-background.jpg);
+  background-size: cover;
+  background-position-x: right;
+}
+.testimonials-section .img-container img {
+  width: 110px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.testimonials-section blockquote {
+  line-height: 1.6em;
+  color: #6b6b6b;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.request-section {
+  background-image: url("/public/imgs/avada-movers-request-quote-background.jpg");
+}
+.request-section p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 * {
@@ -173,6 +200,11 @@ section h3 {
   color: #afaeae;
   font-weight: 800;
   text-transform: capitalize;
+}
+
+.card {
+  max-width: 330px;
+  flex: 1;
 }
 
 .btn {

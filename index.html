@@ -6,28 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="scripts/vue.js"></script>
-    <title>Document</title>
+    <title>Movers</title>
 </head>
 
 <body>
+    <!-- CONTAINER DEL SITO CON ELEMENTO VUE -->
     <div id="root">
         <header>
             <div class="third-material-bg">
+                <!-- BANNER INIZIO PAGINA CON  NUMERO -->
                 <div class="banner padding-1">
                     <div>
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         Call us for a Free Quote: 800 555 6789
                     </div>
                     <div>
-                        <a v-for="element in socialList" :href="element.link"><i :class="element.class" aria-hidden="true"></i></a>
+                        <a v-for="element in socialList" :href="element.link"><i :class="element.class"
+                                aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
+            <!-- NAVBAR -->
             <nav class="wrap flex">
                 <img src="public/imgs/avada-movers-logo.png" alt="">
                 <div>
@@ -38,7 +44,9 @@
                 </div>
             </nav>
         </header>
+        <!-- INIZIO DEL MAIN -->
         <main>
+            <!-- HERO -->
             <section class="hero flex" id="home">
                 <div>
                     <div class="sub-heading">MOVING WITHOUT THE HASSLE</div>
@@ -48,17 +56,20 @@
                 <div class="banner">
                     <div class="text-center">
                         <i class="fa fa-paper-plane-o" aria-hidden="true"></i> GET A FREE QUOTE ONLINE NOW!
-                    </div> 
+                    </div>
                 </div>
             </section>
+            <!-- SEZIONE 1-->
             <section class="block">
                 <div class="sub-heading"> HEADACHE FREE </div>
                 <h2>
-                    Award Winning <br> 
+                    Award Winning <br>
                     Moving Company
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est, suscipit quos id laboriosam asperiores voluptatum quidem ducimus libero mollitia nostrum inventore, nihil earum, sunt voluptate numquam omnis. Autem, voluptates!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est, suscipit quos id laboriosam
+                    asperiores voluptatum quidem ducimus libero mollitia nostrum inventore, nihil earum, sunt voluptate
+                    numquam omnis. Autem, voluptates!
                 </p>
                 <div>
                     <a class="btn">
@@ -66,50 +77,58 @@
                     </a>
                 </div>
             </section>
+            <!-- SEZIONE FULL-SERVICE -->
             <section class="block full-service">
                 <div class="sub-heading"> WE ARE A PROFESSIONAL </div>
                 <h2>
                     Full-Service Solution
                 </h2>
                 <div class="flex justify-center">
-                    <div class="card padding-2 margin-1">
+                    <div class="card padding-3 margin-1">
                         <div class="img-container">
-                          <img src="public/imgs/avada-movers-serviceonephoto-final-600x383.jpg" alt="">
+                            <img src="public/imgs/avada-movers-serviceonephoto-final-600x383.jpg" alt="">
                         </div>
                         <h3>Two Man Teams</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit non?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut
+                            repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit
+                            non?
                         </p>
                         <div>
                             <a href="#" class="btn">READ MORE</a>
                         </div>
-                      </div>
-                      <div class="card padding-2 margin-1">
+                    </div>
+                    <div class="card padding-3 margin-1">
                         <div class="img-container">
-                          <img src="public/imgs/avada-movers-servicetwophoto-final-600x383.jpg" alt="">
+                            <img src="public/imgs/avada-movers-servicetwophoto-final-600x383.jpg" alt="">
                         </div>
                         <h3>We do All the Lifting</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit non?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut
+                            repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit
+                            non?
                         </p>
                         <div>
                             <a href="#" class="btn">READ MORE</a>
                         </div>
-                      </div>
-                      <div class="card padding-2 margin-1">
+                    </div>
+                    <div class="card padding-3 margin-1">
                         <div class="img-container">
-                          <img src="public/imgs/avada-movers-servicethreephoto-final-600x383.jpg" alt="">
+                            <img src="public/imgs/avada-movers-servicethreephoto-final-600x383.jpg" alt="">
                         </div>
                         <h3>Coast to coast</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit non?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut
+                            repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit
+                            non?
                         </p>
                         <div>
                             <a href="#" class="btn">READ MORE</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </section>
+            <!-- SEZIONE MOVE  -->
             <section class="move-section text-center">
                 <div class="card">
                     <div class="sub-heading">
@@ -117,14 +136,74 @@
                     </div>
                     <h2> Move With Ease </h2>
                     <div class="horizontal-line"></div>
-                    <p>With our super simple service we can take you from getting a quote, right through to being in your new home with all of your belongings securely packed and safely delivered, even in the rooms of your choice.</p>
+                    <p>With our super simple service we can take you from getting a quote, right through to being in
+                        your new home with all of your belongings securely packed and safely delivered, even in the
+                        rooms of your choice.</p>
                     <div class="text-center"> <a href="#" class="btn">GET A FREE QUOTE NOW</a> </div>
                 </div>
             </section>
-            <section class="testimonials-section">
-                
+            <!-- SEZIONE TESTIMONIALS -->
+            <section class="testimonials-section text-center">
+                <div class="sub-heading">
+                    HAPPY CUSTOMERS
+                </div>
+                <h2>Testimonials</h2>
+                <div class="flex justify-center">
+                    <div class="card padding-3">
+                        <div class="img-container">
+                            <img src="public/imgs/avada-movers-johndoe-final-200x200.jpg" alt="">
+                        </div>
+                        <h3>John Doe</h3>
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam excepturi quod
+                            maxime iste alias voluptates quaerat exercitationem, aperiam labore corrupti.</blockquote>
+                    </div>
+                    <div class="card padding-3">
+                        <div class="img-container">
+                            <img src="public/imgs/avada-movers-janedoe-final-200x200.jpg" alt="">
+                        </div>
+                        <h3>Jane Doe</h3>
+                        <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti mollitia quo
+                            assumenda libero corporis beatae rerum ratione atque totam aliquam.</blockquote>
+                    </div>
+                    <div class="card padding-3">
+                        <div class="img-container">
+                            <img src="public/imgs/avada-movers-johnsmith-final-200x200.jpg" alt="">
+                        </div>
+                        <h3>John Smith</h3>
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in beatae,
+                            nesciunt facilis exercitationem error temporibus voluptas tempora laboriosam dolore.
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="padding-4">
+                    <a href="#" class="btn">READ MORE TESTIMONIALS</a>
+                </div>
+            </section>
+            <!-- SEZIONE REQUEST -->
+            <section class="request-section">
+                <div class="text-center">
+                    <h2>Request A Free Quote</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eum. Quae quibusdam
+                        perferendis dolorem. Assumenda eveniet suscipit at similique sit?</p>
+                    <div class="padding-3">
+                        <a href="" class="btn">CLICK HERE</a>
+                    </div>
+                </div>
             </section>
         </main>
+        <!-- FOOTER -->
+        <footer class="flex">
+            <div>
+                <h4>ABOUT </h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quibusdam eligendi reprehenderit
+                    ipsum amet voluptatibus! Accusantium reprehenderit voluptas porro ex laboriosam fugiat totam
+                    deleniti perferendis eius, vero eum, tempora suscipit.</p>
+                <div>
+                    <img src="public/imgs/avada-movers-logo.png" alt="">
+                </div>
+            </div>
+
+        </footer>
     </div>
 </body>
 
