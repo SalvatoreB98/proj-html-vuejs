@@ -65,10 +65,23 @@ section.block p {
   text-align: center;
 }
 .full-service .img-container img {
-  width: 85%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.full-service .img-container .card {
+  max-width: 250px;
+  flex: 1;
+}
+
+.move-section {
+  display: flex;
+  background-image: url("/public/imgs/avada-movers-movewithease-background-new.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -158,6 +171,10 @@ section h3 {
   display: flex;
 }
 
+.flex.justify-center {
+  justify-content: center;
+}
+
 .third-material-bg {
   background-color: #6bbb14;
 }
@@ -194,4 +211,16 @@ section h3 {
 
 .padding-6 {
   padding: 6em;
+}
+
+.margin-1 {
+  margin: 1em;
+}
+
+.margin-2 {
+  margin: 2em;
+}
+
+.margin-3 {
+  margin: 3em;
 }

@@ -2,6 +2,9 @@
 .flex{
     display: flex;
 }
+.flex.justify-center{
+    justify-content: center;
+}
 .third-material-bg{
     background-color: $thirdMaterial;
 }
@@ -22,3 +25,9 @@
         padding: #{$i}em;
     };
 }
+@for $i from 1 through 3 {
+    .margin-#{$i} {
+        margin: #{$i}em;
+    };
+}
+
