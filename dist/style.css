@@ -201,6 +201,7 @@ p {
   display: flex;
   font-size: 0.9em;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 section {
