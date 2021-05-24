@@ -14,7 +14,7 @@ window.addEventListener("load",()=>
                 },
                 {
                    name:"Testimonials",
-                    link:"#"
+                    link:"#testimonials"
                 },
                 {
                    name:"FAQ  ",

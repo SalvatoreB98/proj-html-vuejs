@@ -5,22 +5,28 @@ header{
         justify-content: space-between;
         padding: $spacing1 0;
         a{
-            color:white;
+            color:$secondTextColor;
             padding: 0 $spacing1;
             &:visited{
-                color: white;
-            } 
+                color: $secondTextColor;
+            }
         }
     }
     nav{
         padding: $spacing3 0;
         height: 90px;
+        justify-content: space-between;
+        align-items: center;
         img{
             height: 100%;
             width: auto;
         }
-        justify-content: space-between;
-        align-items: center;
+        a{
+            transition: color 0.2s ease-in;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
     }
     .sub-heading{
         color:$darkGray;

@@ -52,7 +52,7 @@ p{
 section{
     padding: $spacing6;
     h3{
-        color: $secondaryColor;
+        color: $firstMaterial;
         font-size: 1.5em;
         margin: #{$spacing4+20} 0 $spacing2 0
     }
@@ -68,10 +68,7 @@ section{
     flex: 1;
 }
 .btn{
-    color: white;
-    &:visited{
-        color: white;
-    }
+    color: $secondTextColor;
     display: inline-block;
     padding: 10px 19px;
     text-transform: capitalize;
@@ -81,10 +78,18 @@ section{
     font-size: 0.7em;
     font-weight: 500;
     letter-spacing: 1.5px;
+    transition: background-color 0.2s ease-in;
+    &:visited{
+        color: $secondTextColor;
+    }
+    &:hover{
+        background-color: $secondaryColor;
+        color: $secondTextColor;
+    }
 
 }
 .horizontal-line{
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid $secondTextColor;
     width: 75%;
     margin: auto;
 }
