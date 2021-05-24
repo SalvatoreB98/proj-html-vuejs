@@ -8,7 +8,7 @@ html{
 }
 h1{
     font-weight: 800;
-    font-size: 3em;
+    font-size: 3.5em;
     margin: $spacing1 0;
 }
 h2{
@@ -54,7 +54,7 @@ section{
     h3{
         color: $firstMaterial;
         font-size: 1.5em;
-        margin: #{$spacing4+20} 0 $spacing2 0
+        margin: #{$spacing4} 0 $spacing2 0
     }
 }
 .sub-heading{
@@ -64,7 +64,7 @@ section{
     text-transform: capitalize;
 }
 .card{
-    max-width: 330px;
+    max-width: 400px;
     flex: 1;
 }
 .btn{

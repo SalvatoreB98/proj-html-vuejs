@@ -1,5 +1,6 @@
 .hero{
     height: 60vh;
+    padding-top: 0;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -20,6 +21,7 @@
     }
 }
 section.block{
+    background-image: url(/public/imgs/);
     text-align: center;
     margin: $spacing2 auto;
     padding: $spacing5;
@@ -34,13 +36,15 @@ section.block{
     .img-container{
         text-align: center;
         img{
-            width: 100%;
+            width: calc(100% + 40px);
+            transform: translate(-20px,-$spacing3);
             height: auto;
             object-fit: cover;
+            border: 20px solid #f6f6f6;;
         }
     }
-    .card{
-        border: 10px solid #e7e7e7;
+    .card > div{
+        border: 20px solid #f6f6f6;
     }
     
 }
@@ -55,11 +59,10 @@ section.block{
     background-repeat: no-repeat;
     .card{
         width: 40%;
-        max-width: 450px;
+        max-width: 500px;
         background-color: $fifthMaterial;
         border: 10px solid $thirdMaterial;
         padding: $spacing5 $spacing3;
-        margin-right: 15%;
         .sub-heading{
             color: $secondTextColor;
             font-weight: 600;
@@ -98,9 +101,10 @@ section.block{
     background-image: url('/public/imgs/avada-movers-request-quote-background.jpg');
     border-bottom: 10px solid $primaryColor;
     p{
-        max-width: 600px;
+        max-width: 700px;
         margin: auto;
-        font-size: $littleFontSize;
+        font-size: 1em;
+        font-weight: 400;
 
     }
 }
