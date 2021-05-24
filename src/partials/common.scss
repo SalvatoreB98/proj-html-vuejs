@@ -4,22 +4,32 @@
     box-sizing: border-box;
 }
 html{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1{
     font-weight: 800;
-    font-size: 2.5em;
+    font-size: 3em;
     margin: $spacing1 0;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.3em;
+    color: $primaryColor;
+    margin: $spacing2 0;
 }
 a{
     display: inline-block;
-    font-weight: 500;
+    font-weight: 600;
     color: $firstTextColor;
     text-decoration: none;
     &:visited{
         color: $fourthMaterial;
 
     }
+}
+p{
+    line-height: 1.8em;
+    color:$darkGray
 }
 .wrap{
     width:90%;
@@ -30,13 +40,34 @@ a{
     color: $secondTextColor;
     display: flex;
     font-size: 0.9em;
+    letter-spacing: 2px;
 }
 section{
     padding: $largeSpaceing;
+    h3{
+        color: $secondaryColor;
+        font-size: 1.5em;
+        margin: #{$spacing4+20} 0 $spacing2 0
+    }
 }
 .sub-heading{
-    font-size: 0.7em;
-    color: $darkGray;
-    font-weight: 700;
+    font-size: 0.85em;
+    color: $neutralColor;
+    font-weight: 800;
     text-transform: capitalize;
+}
+.btn{
+    color: white;
+    &:visited{
+        color: white;
+    }
+    display: inline-block;
+    padding: 7px 17px;
+    text-transform: capitalize;
+    background-color: $firstMaterial;
+    color: $secondTextColor;
+    border-radius: $spacing3;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 }

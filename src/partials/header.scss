@@ -1,5 +1,6 @@
 header{
     .banner{
+        font-size: 13px;
         @include wrap();
         justify-content: space-between;
         padding: $spacing1 0;
@@ -20,6 +21,9 @@ header{
         }
         justify-content: space-between;
         align-items: center;
+    }
+    .sub-heading{
+        color:$darkGray;
     }
 }
 

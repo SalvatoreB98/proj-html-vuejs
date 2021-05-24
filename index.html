@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -30,6 +32,9 @@
                 <img src="public/imgs/avada-movers-logo.png" alt="">
                 <div>
                     <a v-for="element in navLinks" :href="element.link" class="padding-3"> {{element.title}}</a>
+                    <a class="btn">
+                        FREE QUOTE
+                    </a>
                 </div>
             </nav>
         </header>
@@ -44,6 +49,65 @@
                     <div class="text-center">
                         <i class="fa fa-paper-plane-o" aria-hidden="true"></i> GET A FREE QUOTE ONLINE NOW!
                     </div> 
+                </div>
+            </section>
+            <section class="block">
+                <div class="sub-heading"> HEADACHE FREE </div>
+                <h2>
+                    Award Winning <br> 
+                    Moving Company
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est, suscipit quos id laboriosam asperiores voluptatum quidem ducimus libero mollitia nostrum inventore, nihil earum, sunt voluptate numquam omnis. Autem, voluptates!
+                </p>
+                <div>
+                    <a class="btn">
+                        READ OUR TESTIMONIALS
+                    </a>
+                </div>
+            </section>
+            <section class="block full-service">
+                <div class="sub-heading"> WE ARE A PROFESSIONAL </div>
+                <h2>
+                    Full-Service Solution
+                </h2>
+                <div class="flex">
+                    <div class="padding-">
+                        <div class="img-container">
+                          <img src="public/imgs/avada-movers-serviceonephoto-final.jpg" alt="">
+                        </div>
+                        <h3>Two Man Teams</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit non?
+                        </p>
+                        <div>
+                            <a href="#" class="btn">READ MORE</a>
+                        </div>
+                      </div>
+                      <div class="padding-">
+                        <div class="img-container">
+                          <img src="public/imgs/avada-movers-serviceonephoto-final.jpg" alt="">
+                        </div>
+                        <h3>We do All the Lifting</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit non?
+                        </p>
+                        <div>
+                            <a href="#" class="btn">READ MORE</a>
+                        </div>
+                      </div>
+                      <div class="padding-">
+                        <div class="img-container">
+                          <img src="public/imgs/avada-movers-serviceonephoto-final.jpg" alt="">
+                        </div>
+                        <h3>Coast to coast</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit non?
+                        </p>
+                        <div>
+                            <a href="#" class="btn">READ MORE</a>
+                        </div>
+                      </div>
                 </div>
             </section>
         </main>

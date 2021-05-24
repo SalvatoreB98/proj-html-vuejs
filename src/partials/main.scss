@@ -19,3 +19,25 @@
         justify-content: center;
     }
 }
+section.block{
+    text-align: center;
+    margin: $spacing2 auto;
+    padding: $spacing5;
+    p{
+        font-size: 0.85em;
+        font-weight: 500;
+        margin: $spacing3 auto;
+        max-width: 500px;
+    }
+}
+.full-service{
+    .img-container{
+        text-align: center;
+        img{
+            width: 85%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    
+}
