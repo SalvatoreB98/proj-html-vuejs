@@ -5,6 +5,9 @@
 .third-material-bg{
     background-color: $thirdMaterial;
 }
+.wrap{
+    @include wrap();
+}
 //MARGINS AND PADDINGS
 @for $i from 1 through 3 {
     .padding-#{$i} {
