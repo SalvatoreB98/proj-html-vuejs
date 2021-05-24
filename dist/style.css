@@ -77,11 +77,19 @@ section.block p {
 
 .move-section {
   display: flex;
+  justify-content: flex-end;
   background-image: url("/public/imgs/avada-movers-movewithease-background-new.jpg");
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
   background-repeat: no-repeat;
+}
+.move-section .card {
+  width: 40%;
+  max-width: 450px;
+  background-color: #8fce53;
+  border: 10px solid #6bbb14;
+  padding: 25px;
 }
 
 * {

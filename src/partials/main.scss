@@ -47,9 +47,18 @@ section.block{
 }
 .move-section{
     display: flex;
+    justify-content: flex-end;
     background-image: url('/public/imgs/avada-movers-movewithease-background-new.jpg');
     background-size: cover;
     background-position-y: center;
     background-position-x:center ;
     background-repeat: no-repeat;
+    .card{
+        
+        width: 40%;
+        max-width: 450px;
+        background-color: $fifthMaterial;
+        border: 10px solid $thirdMaterial;
+        padding: $spacing4;
+    }
 }
