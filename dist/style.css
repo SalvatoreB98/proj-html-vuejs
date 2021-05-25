@@ -287,6 +287,28 @@ ul {
   padding: 20px;
 }
 
+a.go-up {
+  color: white;
+}
+
+.go-up {
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  background-color: #292b2f;
+  width: 50px;
+  height: 45px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.go-up:hover {
+  background-color: #69bf14;
+}
+
 .before-enter {
   opacity: 0%;
   transition: opacity 0.5s ease-in-out;
