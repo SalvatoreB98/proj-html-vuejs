@@ -31,6 +31,15 @@
 .show{
     display: block;
 }
+.to-animate{
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+.active{
+    opacity: 1;
+    transform: scale(1);
+}
 //MARGINS AND PADDINGS
 @for $i from 1 through 3 {
     .padding-#{$i} {

@@ -1,5 +1,9 @@
 window.addEventListener("load",()=>
 {
+    Vue.component('todo-item', {
+        template: '<li>This is a todo</li>'
+      })
+      
     const vue = new Vue({
         el: '#root',
         data: {

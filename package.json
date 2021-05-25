@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SalvatoreB98/proj-html-vuejs#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "laravel-mix": "^6.0.19"
   },
   "devDependencies": {

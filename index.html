@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -18,7 +19,7 @@
 
 <body>
     <!-- CONTAINER DEL SITO CON ELEMENTO VUE -->
-    <div id="root" >
+    <div id="root">
         <header>
             <div class="third-material-bg">
                 <!-- BANNER INIZIO PAGINA CON  NUMERO -->
@@ -38,22 +39,27 @@
                 <nav class="flex wrap">
                     <img src="public/imgs/avada-movers-logo.png" alt="">
                     <div class="hidden-sm">
-                        <a v-for="(element,index) in navLinks" :href="element.link" class="padding-3" @click="setActiveLink(index)" :class="{'active' : activeLink == index}"> {{element.name}}</a>
+                        <a v-for="(element,index) in navLinks" :href="element.link" class="padding-3"
+                            @click="setActiveLink(index)" :class="{'active' : activeLink == index}">
+                            {{element.name}}</a>
                         <a class="btn" href="#free-quote">
                             FREE QUOTE
                         </a>
                     </div>
-                    <a class="show-sm" href="#" @click="openCloseMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a class="show-sm" href="#" @click="openCloseMenu()"><i class="fa fa-bars"
+                            aria-hidden="true"></i></a>
                 </nav>
-                 <div class="hidden" :class="{'show' : isMenuOpen}">
-                        <div class="show-sm nav-bar-mobile text-center">
-                            <div v-for="(element,index) in navLinks">
-                                <a @click="openCloseMenu()" :href="element.link" class="padding-3" @click="setActiveLink(index)" :class="{'active' : activeLink == index}"> {{element.name}}</a>
-                            </div>
+                <div class="hidden" :class="{'show' : isMenuOpen}">
+                    <div class="show-sm nav-bar-mobile text-center">
+                        <div v-for="(element,index) in navLinks">
+                            <a @click="openCloseMenu()" :href="element.link" class="padding-3"
+                                @click="setActiveLink(index)" :class="{'active' : activeLink == index}">
+                                {{element.name}}</a>
                         </div>
                     </div>
+                </div>
             </div>
-            
+
         </header>
         <!-- INIZIO DEL MAIN -->
         <main id="home">
@@ -77,7 +83,7 @@
                     Award Winning <br>
                     Moving Company
                 </h2>
-                <p>
+                <p class="to-animate">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est, suscipit quos id laboriosam
                     asperiores voluptatum quidem ducimus libero mollitia nostrum inventore, nihil earum, sunt voluptate
                     numquam omnis. Autem, voluptates!
@@ -102,8 +108,10 @@
                             </div>
                             <h3>Two Man Teams</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut
-                                repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo.
+                                Ut
+                                repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus
+                                odit
                                 non?
                             </p>
                             <div class="padding-2">
@@ -118,8 +126,10 @@
                             </div>
                             <h3>We do All the Lifting</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut
-                                repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo.
+                                Ut
+                                repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus
+                                odit
                                 non?
                             </p>
                             <div class="padding-2">
@@ -134,8 +144,10 @@
                             </div>
                             <h3>Coast to coast</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo. Ut
-                                repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus odit
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum explicabo.
+                                Ut
+                                repudiandae assumenda, inventore non minus totam. Quisquam quasi odio itaque ducimus
+                                odit
                                 non?
                             </p>
                             <div class="padding-2">
@@ -247,6 +259,7 @@
             </div>
         </div>
     </div>
+    <script src="scripts/animations.js"></script>
 </body>
 
 </html>

@@ -288,6 +288,15 @@ ul {
   padding: 20px;
 }
 
+.before-enter {
+  opacity: 0%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.enter {
+  opacity: 100%;
+}
+
 @media screen and (max-width: 900px) {
   section.block {
     padding-left: 10px;
