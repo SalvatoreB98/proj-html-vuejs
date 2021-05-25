@@ -98,3 +98,13 @@ section{
 ul{
     list-style-type: none;
 }
+.nav-bar-mobile{
+    background-color: $secondTextColor;
+    flex-direction: row;
+    position: fixed;
+    right: 0;
+    top: 90px + 35px;
+    height: calc(100vh - 90px);
+    width: 60%;
+    max-width: 400px;
+}

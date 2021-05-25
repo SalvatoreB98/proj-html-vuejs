@@ -1,4 +1,9 @@
 header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    left: 0;
     .banner{
         font-size: $littleFontSize;
         @include wrap();
@@ -22,10 +27,7 @@ header{
             width: auto;
         }
         a{
-            transition: color 0.2s ease-in;
-            &:hover{
-                color: $primaryColor;
-            }
+           @include a-animation;
         }
         .active{
             color: $primaryColor; 

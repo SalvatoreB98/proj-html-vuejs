@@ -1,6 +1,5 @@
 .hero{
-    height: 60vh;
-    padding-top: 0;
+    height: calc(100vh);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -19,6 +18,15 @@
         display: flex;
         justify-content: center;
     }
+}
+.title{
+    transform: translateY(-500px);
+    opacity: 0%;
+    transition: opacity $animationSpeed $bezier, transform $animationSpeed $bezier;
+}
+.animation{
+    opacity: 100%;
+    transform: translateY(0px);
 }
 section.block{
     background-image: url(/public/imgs/);
@@ -40,7 +48,7 @@ section.block{
             transform: translate(-20px,-$spacing3);
             height: auto;
             object-fit: cover;
-            border: 20px solid #f6f6f6;;
+            border: 20px solid #f6f6f6;
         }
     }
     .card > div{

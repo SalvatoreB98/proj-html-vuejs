@@ -1,10 +1,16 @@
 footer > div{
     flex: 1;
 }
+footer{
+    a{
+        @include a-animation;
+    }
+}
 .footer-banner{
     font-size: $littleFontSize;
     color: $secondTextColor;
     a {
         color: $secondTextColor;
+
     }
 }

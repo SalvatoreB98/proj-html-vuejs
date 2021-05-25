@@ -22,11 +22,11 @@ window.addEventListener("load",()=>
                 },
                 {
                    name:"Blog",
-                    link:"#"
+                    link:"#blog"
                 },
                 {
                    name:"Contact",
-                    link:"#"
+                    link:"#contact"
                 },
             ],
             socialList:[
@@ -74,18 +74,28 @@ window.addEventListener("load",()=>
                     link:"#"
                 },
             ],
-            activeLink: 0
+            activeLink: 0,
+            animation: '',
+            isMenuOpen : false
         },
         methods: {
             setActiveLink(index){
                 this.activeLink = index;
+            },
+            setAnimation(){
+                setTimeout(()=>{
+                    this.animation = 'animation';
+                },300)
+            },
+            openCloseMenu(){
+                this.isMenuOpen = !this.isMenuOpen;
             }
         },
         computed:{
     
         },
         mounted(){
-            
+            this.setAnimation();
         },
     })
 })

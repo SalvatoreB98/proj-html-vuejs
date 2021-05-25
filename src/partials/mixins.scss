@@ -3,3 +3,9 @@
     max-width: 1100px;
     margin: auto;
 }
+@mixin  a-animation {
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: $primaryColor;
+    }
+}

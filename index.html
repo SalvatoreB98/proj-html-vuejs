@@ -18,7 +18,7 @@
 
 <body>
     <!-- CONTAINER DEL SITO CON ELEMENTO VUE -->
-    <div id="root" id="home">
+    <div id="root" >
         <header>
             <div class="third-material-bg">
                 <!-- BANNER INIZIO PAGINA CON  NUMERO -->
@@ -34,21 +34,32 @@
                 </div>
             </div>
             <!-- NAVBAR -->
-            <nav class="wrap flex">
-                <img src="public/imgs/avada-movers-logo.png" alt="">
-                <div class="hidden-sm">
-                    <a v-for="(element,index) in navLinks" :href="element.link" class="padding-3" @click="setActiveLink(index)" :class="{'active' : activeLink == index}"> {{element.name}}</a>
-                    <a class="btn">
-                        FREE QUOTE
-                    </a>
-                </div>
-            </nav>
+            <div class="second-bg">
+                <nav class="flex wrap">
+                    <img src="public/imgs/avada-movers-logo.png" alt="">
+                    <div class="hidden-sm">
+                        <a v-for="(element,index) in navLinks" :href="element.link" class="padding-3" @click="setActiveLink(index)" :class="{'active' : activeLink == index}"> {{element.name}}</a>
+                        <a class="btn" href="#free-quote">
+                            FREE QUOTE
+                        </a>
+                    </div>
+                    <a class="show-sm" href="#" @click="openCloseMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </nav>
+                 <div class="hidden" :class="{'show' : isMenuOpen}">
+                        <div class="show-sm nav-bar-mobile text-center" :class="{'animation': isMenuOpen}">
+                            <div v-for="(element,index) in navLinks">
+                                <a @click="openCloseMenu()" :href="element.link" class="padding-3" @click="setActiveLink(index)" :class="{'active' : activeLink == index}"> {{element.name}}</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
         </header>
         <!-- INIZIO DEL MAIN -->
-        <main>
+        <main id="home">
             <!-- HERO -->
             <section class="hero flex">
-                <div>
+                <div class="title" :class="animation">
                     <div class="sub-heading">MOVING WITHOUT THE HASSLE</div>
                     <h1>WE MAKE IT SIMPLE</h1>
                     <div class="sub-heading">PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</div>
@@ -186,7 +197,7 @@
                 </div>
             </section>
             <!-- SEZIONE REQUEST -->
-            <section class="request-section">
+            <section class="request-section" id="free-quote">
                 <div class="text-center">
                     <h2>Request A Free Quote</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eum. Quae quibusdam
@@ -198,7 +209,7 @@
             </section>
         </main>
         <!-- FOOTER -->
-        <footer class="flex">
+        <footer class="flex" id="blog">
             <div class="padding-4">
                 <h4>ABOUT </h4>
                 <p class="margin-top-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quibusdam
@@ -212,19 +223,19 @@
             <div class="padding-4">
                 <h4>AVADA MOVERS</h4>
                 <ul>
-                    <li class="margin-top-5" v-for="element in navLinks"><a href="element.link"> > {{element.name}}</a>
+                    <li class="margin-top-5" v-for="element in navLinks"><a :href="element.link"> > {{element.name}}</a>
                     </li>
                 </ul>
             </div>
             <div class="padding-4">
                 <h4>RECENT POSTS</h4>
                 <ul>
-                    <li class="margin-top-5" v-for="element in recentPosts"><a href="element.link"> >
+                    <li class="margin-top-5" v-for="element in recentPosts"><a :href="element.link"> >
                             {{element.name}}</a></li>
                 </ul>
             </div>
         </footer>
-        <div class="third-material-bg">
+        <div class="third-material-bg" id="contact">
             <div class="footer-banner text-center padding-4">
                 <div>
                     ®Copyright 2012-2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress
