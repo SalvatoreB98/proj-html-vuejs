@@ -48,9 +48,8 @@ header .sub-heading {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("/public/imgs/avada-movers-homeherobackground-final.jpg");
+  background-image: url(/images/avada-movers-homeherobackground-final.jpg?4923541cd73099f3c0fe04188ed0f95c);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -66,18 +65,17 @@ header .sub-heading {
 }
 
 .title {
-  transform: translateY(-500px);
+  transform: translateY(-100px);
   opacity: 0%;
-  transition: opacity 0.5s cubic-bezier(0.68, 0.03, 0.2, 0.99), transform 0.5s cubic-bezier(0.68, 0.03, 0.2, 0.99);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.animation {
+.animation-hero {
   opacity: 100%;
   transform: translateY(0px);
 }
 
 section.block {
-  background-image: url(/public/imgs/);
   text-align: center;
   margin: 15px auto;
   padding: 50px;
@@ -107,7 +105,7 @@ section.block p {
   color: #fefefe;
   display: flex;
   justify-content: flex-end;
-  background-image: url("/public/imgs/avada-movers-movewithease-background-new.jpg");
+  background-image: url(/images/avada-movers-movewithease-background-new.jpg?26fdb986296f159f6745531e175a22bb);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -135,7 +133,7 @@ section.block p {
 }
 
 .testimonials-section {
-  background-image: url(/public/imgs/avada-movers-testimonial-background.jpg);
+  background-image: url("/public/imgs/avada-movers-testimonial-background.jpg");
   background-size: cover;
   background-position-x: right;
 }
@@ -162,6 +160,12 @@ section.block p {
   font-weight: 400;
 }
 
+@media screen and (max-width: 900px) {
+  .full-service .card {
+    width: 100%;
+    max-width: 700px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -217,7 +221,7 @@ p {
   color: #fefefe;
   display: flex;
   font-size: 0.9em;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
   cursor: pointer;
 }
 
@@ -279,11 +283,17 @@ ul {
   position: fixed;
   right: 0;
   top: 125px;
-  height: calc(100vh - 90px);
   width: 60%;
   max-width: 400px;
+  padding: 20px;
 }
 
+@media screen and (max-width: 900px) {
+  section.block {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .flex {
   display: flex;
 }

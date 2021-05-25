@@ -75,7 +75,7 @@ window.addEventListener("load",()=>
                 },
             ],
             activeLink: 0,
-            animation: '',
+            animationHero: '',
             isMenuOpen : false
         },
         methods: {
@@ -84,7 +84,7 @@ window.addEventListener("load",()=>
             },
             setAnimation(){
                 setTimeout(()=>{
-                    this.animation = 'animation';
+                    this.animationHero = 'animation-hero';
                 },300)
             },
             openCloseMenu(){

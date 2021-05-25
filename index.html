@@ -46,7 +46,7 @@
                     <a class="show-sm" href="#" @click="openCloseMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
                 </nav>
                  <div class="hidden" :class="{'show' : isMenuOpen}">
-                        <div class="show-sm nav-bar-mobile text-center" :class="{'animation': isMenuOpen}">
+                        <div class="show-sm nav-bar-mobile text-center">
                             <div v-for="(element,index) in navLinks">
                                 <a @click="openCloseMenu()" :href="element.link" class="padding-3" @click="setActiveLink(index)" :class="{'active' : activeLink == index}"> {{element.name}}</a>
                             </div>
@@ -59,7 +59,7 @@
         <main id="home">
             <!-- HERO -->
             <section class="hero flex">
-                <div class="title" :class="animation">
+                <div class="title" :class="animationHero">
                     <div class="sub-heading">MOVING WITHOUT THE HASSLE</div>
                     <h1>WE MAKE IT SIMPLE</h1>
                     <div class="sub-heading">PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</div>
