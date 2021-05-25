@@ -1,7 +1,7 @@
 window.addEventListener('scroll', () => {
-    let content = document.querySelector('.to-animate');
+    let content = document.querySelector('.before');
     let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight;
+    let screenPosition = window.innerHeight/1.5;
     if (contentPosition < screenPosition) {
         content.classList.add('active');
     } else {

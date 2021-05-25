@@ -5,6 +5,9 @@
 .flex.justify-center{
     justify-content: center;
 }
+.light-gray-bg{
+    background-color: #f5f5f5;
+}
 .third-material-bg{
     background-color: $thirdMaterial;
 }
@@ -31,10 +34,10 @@
 .show{
     display: block;
 }
-.to-animate{
-    opacity: 0;
-    transform: scale(0.1);
-    transition: all 1s ease-in-out;
+.before{ 
+    opacity: 0%;
+    transform: scale(0.5);
+    transition: all $animationSpeed ease-in-out;
 }
 .active{
     opacity: 1;

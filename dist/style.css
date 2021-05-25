@@ -77,7 +77,6 @@ header .sub-heading {
 
 section.block {
   text-align: center;
-  margin: 15px auto;
   padding: 50px;
 }
 section.block p {
@@ -311,6 +310,10 @@ ul {
   justify-content: center;
 }
 
+.light-gray-bg {
+  background-color: #f5f5f5;
+}
+
 .third-material-bg {
   background-color: #6bbb14;
 }
@@ -345,6 +348,17 @@ ul {
 
 .show {
   display: block;
+}
+
+.before {
+  opacity: 0%;
+  transform: scale(0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .padding-1 {
