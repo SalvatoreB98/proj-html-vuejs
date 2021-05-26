@@ -1,6 +1,7 @@
-var i=0;
-window.addEventListener('scroll', () => {
+window.addEventListener("load",()=>{
+    var i=0;
     let contents = document.querySelectorAll('.before');
+window.addEventListener('scroll', () => {
     if(i<contents.length){
         var content = contents[i];
     }
@@ -19,4 +20,6 @@ window.addEventListener('scroll', () => {
             i--;
         }
     }
+})
+
 })
