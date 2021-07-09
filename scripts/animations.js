@@ -5,7 +5,6 @@ window.addEventListener('scroll', () => {
     if(i<contents.length){
         var content = contents[i];
     }
-    console.log(i);
     let contentPosition = content.getBoundingClientRect().top;
     let screenPosition = window.innerHeight/1.5;
     if (contentPosition < screenPosition) {
