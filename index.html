@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- META -->
     <meta property="og:title" content="Riproduzione di un tema WordPress">
     <meta property="og:url" content="https://salvatoreb98.github.io/proj-html-vuejs/">
-    <meta property="og:image" content="https://raw.githubusercontent.com/SalvatoreB98/proj-html-vuejs/master/images/avada.png">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/SalvatoreB98/proj-html-vuejs/master/images/avada.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -15,6 +18,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/style.css">
+    <!-- SCRIPTS-->
+    <script src="scripts/fix.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="scripts/vue.js"></script>
     <title>Movers</title>
@@ -68,7 +73,7 @@
         <main id="home">
             <!-- HERO -->
             <section class="hero flex">
-                <div class="title" :class="animationHero" style="background-image: url('images/avada-movers-homeherobackground-final.jpg');">
+                <div class="title" :class="animationHero" id="hero">
                     <div class="sub-heading">MOVING WITHOUT THE HASSLE</div>
                     <h1>WE MAKE IT SIMPLE</h1>
                     <div class="sub-heading">PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</div>
@@ -164,7 +169,8 @@
                 </div>
             </section>
             <!-- SEZIONE MOVE  -->
-            <section class="move-section text-center" style="background-image: url('public/imgs/avada-movers-movewithease-background-new.jpg');">
+            <section class="move-section text-center"
+                style="background-image: url('public/imgs/avada-movers-movewithease-background-new.jpg');">
                 <div class="card before">
                     <div class="sub-heading">
                         WE REMOVE THE HEADACHE FROM MOVING
@@ -178,7 +184,8 @@
                 </div>
             </section>
             <!-- SEZIONE TESTIMONIALS -->
-            <section class="testimonials-section text-center" id="testimonials" style="background-image: url('public/imgs/avada-movers-testimonial-background.jpg')">
+            <section class="testimonials-section text-center" id="testimonials"
+                style="background-image: url('public/imgs/avada-movers-testimonial-background.jpg')">
                 <div class="sub-heading">
                     HAPPY CUSTOMERS
                 </div>
@@ -215,7 +222,8 @@
                 </div>
             </section>
             <!-- SEZIONE REQUEST -->
-            <section class="request-section" id="free-quote" style="background-image: url('public/imgs/avada-movers-request-quote-background.jpg');">
+            <section class="request-section" id="free-quote"
+                style="background-image: url('public/imgs/avada-movers-request-quote-background.jpg');">
                 <div class="text-center before">
                     <h2>Request A Free Quote</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eum. Quae quibusdam
