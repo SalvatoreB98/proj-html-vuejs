@@ -48,7 +48,6 @@ header .sub-heading {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url(/images/avada-movers-homeherobackground-final.jpg?4923541cd73099f3c0fe04188ed0f95c);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -104,7 +103,6 @@ section.block p {
   color: #fefefe;
   display: flex;
   justify-content: flex-end;
-  background-image: url(/images/avada-movers-movewithease-background-new.jpg?26fdb986296f159f6745531e175a22bb);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -132,7 +130,6 @@ section.block p {
 }
 
 .testimonials-section {
-  background-image: url("/public/imgs/avada-movers-testimonial-background.jpg");
   background-size: cover;
   background-position-x: right;
 }
@@ -149,7 +146,6 @@ section.block p {
 }
 
 .request-section {
-  background-image: url("/public/imgs/avada-movers-request-quote-background.jpg");
   border-bottom: 10px solid #69bf14;
 }
 .request-section p {
